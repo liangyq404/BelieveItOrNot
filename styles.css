@@ -1,3 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    /* background-image: url('cover.png'); */
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.cursor {
+    height: 50px;
+    width: 50px;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    z-index: -1;
+}
+
+.link-grow {
+    transform: scale(2);
+    background: orange;
+}
+
+.hover-link {
+    color: white;
+}
+
+\\ nav {
+    line-height: 40px;
+    width: 40px;
+    /* background-color: aliceblue;  */
+}
+
+.enter {
+    height: 40px;
+    float: left;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition-duration: 0.25s;
+}
+
+.enter:hover {
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+}
+
+.right .content {
+    float: right;
+    border: 1px solid blue;
 }
